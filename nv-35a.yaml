@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.0.7:6443
+  name: cluster.local
+contexts:
+- context:
+    cluster: cluster.local
+    namespace: nv-35a
+    user: admin
+  name: default-context
+current-context: default-context
+kind: Config
+preferences: {}
+users:
+- name: admin
+  user:
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJudi0zNWEiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiZGVmYXVsdC10b2tlbi1sejU5MiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiNDRiODk4MGUtM2U3OS0xMWVhLWE2YTAtZmExNjNlN2U0YWEwIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Om52LTM1YTpkZWZhdWx0In0.h3f2D8bvU1E3xNftZRjAB162wqYwBaFUsD6odJz7Gh4LQURtmEJ_qwPfPo1hgMc46prKFUmy44oF655BD3v3LXENF9XeXFOfULTNThLeXsa7Zs_yOj0Tae_BHytH6mpJXE3Wfzy6cnLPu4JSVMZQhxHJBopgTQ1DJ5Gh-HXzoVamJwNt-avusVO8qZZgHtOsg71aQO09g2IYqOdDeXhNI1b4bVPmY0L994DFCUa6a1I8yVAEIX2ZijvO5dUUh4EWnDIUk4IpFw6RFBBMb3tTeK5iJtqPLeJoxgAO5-0IhB6y9-1m51LcI2a4qjde64_YZ_dQs22fZk6YKLaLmz73gA

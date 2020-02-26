@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pysoul=pysoul.cli.scripts:cli
+    

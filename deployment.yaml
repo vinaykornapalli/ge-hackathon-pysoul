@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pysoul-server
+  labels:
+    app: pysoul
+spec:
+  selector:
+    matchLabels:
+      app: pysoul
+  template:
+    metadata:
+      labels:
+        app: pysoul
+    spec:
+      containers:
+      - name: pysoul-docker
+        image: vinaycr7/ge-pysoul:web-server-1
+        ports:
+        - containerPort: 80
